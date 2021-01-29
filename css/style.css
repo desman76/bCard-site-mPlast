@@ -1,0 +1,1133 @@
+:root {
+    font-size: calc(1vw + 0.6em);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    /*font-family: 'Raleway', serif ;*/
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*-----header-----*/
+.header {
+    /*position: fixed;*/
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.header__body {
+    position: relative;
+    /*z-index: 2;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*left: 0;*/
+    /*right: 0;*/
+    height: 80px;
+    /*width: 100%;*/
+}
+
+/*.header__phone-body {*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    align-items: center;*/
+/*    z-index: 3;*/
+/*}*/
+
+.header__logo {
+    flex: 0 0 180px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.header__logo img {
+    max-width: 100%;
+}
+
+.header__phone {
+    /*padding-left: 20px;*/
+    margin-right: 10px;
+    z-index: 3;
+}
+
+.phone-image {
+    width: 20px;
+    display: inline-block;
+}
+
+.phone-image img {
+    width: 100%;
+}
+
+.header__body-phone {
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bolder;
+    color: #ff0e11;
+}
+
+.header__body-phone:hover {
+    text-decoration: underline;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__menu {
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.header__list li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: inherit;
+}
+
+.header__link:hover {
+    color: #08b8a0;
+}
+
+/*-----content-image-----*/
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content__image img {
+    width: 100%;
+}
+
+.content__header {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.content__header h1 {
+    font-size: 40px;
+}
+
+.content__header span {
+    font-size: 30px;
+}
+
+.content__header-shadow {
+    text-shadow: 0 1px 1px black, 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black;
+}
+
+.content__age {
+    position: absolute;
+    width: 200px;
+    bottom: 50px;
+    right: 220px;
+}
+
+.content__age img {
+    width: 100%;
+}
+
+/*-----products-----*/
+.products {
+    position: relative;
+}
+
+.products__body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.products__item {
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products__item img {
+    width: 100%;
+}
+
+.products__description {
+    font-size: 20px;
+
+}
+
+.products__price {
+    text-transform: lowercase;
+    font-size: 18px;
+}
+
+.products__price span {
+    color: #ff0e11;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+/*additional*/
+.additional {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.additional__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.additional__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px #3d3d3d;
+    margin-bottom: 20px;
+}
+
+.additional__img img {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+/*phones*/
+.phones {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.5);
+    margin-top: 50px;
+    border-radius: 6vw;
+    padding: 15px 80px;
+    color: white;
+}
+
+.phones__description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.phones__description a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.phones__description a:hover {
+    color: #9aef43;
+}
+
+.phone__numbers {
+    font-size: 20px;
+}
+
+.phone__numbers a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    text-align: right;
+}
+
+.phone__numbers a:hover {
+    color: #9aef43;
+}
+
+.chelny-phone:before {
+    content: 'Набережные Челны: ';
+}
+
+.nizhnekamsk-phone:before {
+    content: 'Нижнекамск: ';
+}
+
+/*window-structure*/
+.section-header {
+    width: 100%;
+    margin: 6vw 0 3vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-header h2 {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.window-structure {
+    position: relative;
+    width: 100%;
+}
+
+.window-structure__header {
+
+}
+
+.window-structure__header h2 {
+}
+
+.window-structure__body {
+    display: flex;
+    position: relative;
+}
+
+.window-structure__body-image {
+    /*margin-left: 30px;*/
+    width: 100%;
+}
+
+
+.window-structure__body-image img {
+    width: 80%;
+    padding-top: 2px;
+}
+
+.window-structure__body-items {
+    /*display: flex;*/
+}
+
+.window-structure__body-items > .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+.item1 {
+    height: 30%;
+    background: rgba(238, 0, 0, 0.2);
+    top: 0;
+}
+
+.item2 {
+    height: 10%;
+    background: rgba(29, 54, 255, 0.2);
+    top: 30%;
+}
+
+.item3 {
+    height: 10%;
+    background: rgba(252, 226, 3, 0.2);
+    top: 40%;
+}
+
+.item4 {
+    height: 30%;
+    background: rgba(38, 165, 0, 0.2);
+    top: 50%;
+}
+
+.item5 {
+    height: 20%;
+    background: rgba(99, 4, 158, 0.2);
+    top: 80%;
+}
+
+.item_span {
+    /*display: flex;*/
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 73%;
+}
+
+/*footer*/
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    /*background: url("img/fabric-texture.jpg");*/
+    /*height: 150px;*/
+}
+
+.footer__body:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.copy img {
+    width: 12px;
+    margin-right: 4px;
+}
+
+.copy span {
+    font-size: 30px;
+    font-family: 'Raleway', serif;
+    /*font-weight: 400;*/
+}
+
+.contacts {
+
+}
+
+.contacts h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contacts p {
+    margin-top: 20px;
+    font-style: italic;
+    text-transform: none;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.contacts img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+/*@media (max-width: 768px) {*/
+/*    !*header*!*/
+/*    .body {*/
+/*        overflow: hidden;*/
+/*    }*/
+
+/*    .header__body {*/
+/*        height: 50px;*/
+/*    }*/
+
+/*    .header__logo {*/
+/*        flex: 0 0 130px;*/
+/*    }*/
+
+/*    .header__burger {*/
+/*        display: block;*/
+/*        position: relative;*/
+/*        width: 40px;*/
+/*        height: 20px;*/
+/*        z-index: 3;*/
+/*    }*/
+
+/*    .header__burger:before,*/
+/*    .header__burger:after,*/
+/*    .header__burger span {*/
+/*        content: '';*/
+/*        width: 100%;*/
+/*        height: 3px;*/
+/*        left: 0;*/
+/*        background-color: black;*/
+/*        position: absolute;*/
+/*        transition: all .2s;*/
+/*    }*/
+
+/*    .header__burger:before {*/
+/*        top: 0;*/
+/*    }*/
+
+/*    .header__burger:after {*/
+/*        bottom: 0;*/
+/*    }*/
+
+/*    .header__burger span {*/
+/*        top: 9px;*/
+/*    }*/
+
+/*    .header__burger.active:before {*/
+/*        transform: rotate(-45deg);*/
+/*        top: 9px;*/
+/*    }*/
+
+/*    .header__burger.active:after {*/
+/*        transform: rotate(45deg);*/
+/*        bottom: 9px;*/
+/*    }*/
+
+/*    .header__burger.active span {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .header__menu {*/
+/*        position: fixed;*/
+/*        width: 100%;*/
+/*        height: 100%;*/
+/*        left: 0;*/
+/*        top: -100%;*/
+/*        background-color: rgba(68, 145, 236, 0.75);*/
+/*        overflow: auto;*/
+/*        padding-top: 60px;*/
+/*        transition: all .2s;*/
+/*    }*/
+
+/*    .header__menu.active {*/
+/*        top: 0;*/
+/*    }*/
+
+/*    .header__list {*/
+/*        display: block;*/
+
+/*    }*/
+
+/*    .header__list li {*/
+/*        margin-top: 15px;*/
+/*    }*/
+
+/*    !*content-image*!*/
+/*    .content__header {*/
+/*        top: 300px;*/
+/*    }*/
+/*}*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header__body {
+        height: 6vw;
+    }
+
+    .header__logo {
+        flex: 0 0 15vw;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .phone-image {
+        width: 1.5vw;
+    }
+
+    .header__body-phone {
+        font-size: 2.5vw;
+    }
+
+    .section-header h2 {
+        font-size: 2.5vw;
+    }
+
+    .content__header {
+        top: 4vw;
+        right: 4vw;
+        line-height: 3.5vw;
+    }
+
+    .content__header h1 {
+        font-size: 3vw;
+    }
+
+    .content__header span {
+        font-size: 2vw;
+    }
+
+    .content__age {
+        width: 18vw;
+        bottom: 5vw;
+        right: 14vw;
+    }
+
+    /*.products__item{*/
+    /*    width: 70vw;*/
+    /*}*/
+    .products__description {
+        font-size: 1.8vw;
+
+    }
+
+    .products__price {
+        text-transform: lowercase;
+        font-size: 1.3vw;
+    }
+
+    .products__price span {
+        font-size: 1.5vw;
+    }
+
+    .additional {
+        margin-top: 40px;
+    }
+
+    .additional__item {
+        margin-bottom: 20px;
+    }
+
+    .additional__img {
+        width: 200px;
+        height: 200px;
+        /*box-shadow: 0 0 10px 1px #3d3d3d;*/
+        margin-bottom: 20px;
+    }
+
+    .phones__description a {
+        font-size: 30px;
+    }
+
+    .item_span {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header__body {
+        height: 8vw;
+    }
+
+    .header__logo {
+        flex: 0 0 15vw;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .header__phone {
+        height: max-content;
+    }
+
+    .phone-image {
+        width: 1.5vw;
+    }
+
+    .header__body-phone {
+        font-size: 2.5vw;
+    }
+
+    .section-header h2 {
+        font-size: 3vw;
+    }
+
+    .content__header {
+        top: 4vw;
+        right: 4vw;
+        line-height: 5vw;
+    }
+
+    .content__header h1 {
+        font-size: 4vw;
+    }
+
+    .content__header span {
+        font-size: 3vw;
+    }
+
+    .content__age {
+        width: 18vw;
+        bottom: 5vw;
+        right: 14vw;
+    }
+
+    .products__item {
+        width: 50%;
+    }
+
+    .products__description {
+        font-size: 2.3vw;
+    }
+
+    .products__price {
+        text-transform: lowercase;
+        font-size: 2vw;
+    }
+
+    .products__price span {
+        font-size: 2.2vw;
+        margin: 0 5px;
+    }
+
+    .additional {
+        margin-top: 30px;
+        /*margin-left: 80px;*/
+    }
+
+    .additional__item {
+        margin-bottom: 20px;
+        width: 25%;
+    }
+
+    .additional__img {
+        width: 170px;
+        height: 170px;
+        box-shadow: 0 0 6px 1px #3d3d3d;
+        margin-bottom: 20px;
+    }
+
+    .phones {
+        height: 11vw;
+        margin-top: 2vw;
+        border-radius: 6vw;
+        padding: 15px 65px;
+    }
+
+    .phones__description {
+        font-size: 2vw;
+    }
+
+    .phones__description a {
+        font-size: 3vw;
+    }
+
+    .phone__numbers {
+        font-size: 2vw;
+    }
+
+    .phone__numbers a {
+
+    }
+
+    .item_span {
+        font-size: 2.5vw;
+    }
+
+    .footer__body {
+        margin-top: 8vw;
+        padding: 6vw;
+    }
+
+    .copy {
+        line-height: 4vw;
+    }
+
+    .copy img {
+        width: 12px;
+        margin-right: 4px;
+    }
+
+    .copy span {
+        font-size: 3vw;
+    }
+
+    .copy p {
+        font-size: 1.6vw;
+    }
+
+    .contacts {
+
+    }
+
+    .contacts h4 {
+        margin-bottom: 10px;
+        font-size: 2vw;
+    }
+
+    .contacts p {
+        margin-top: 2vw;
+    }
+
+    .contacts a {
+        font-size: 3vw;
+    }
+
+    .contacts img {
+        width: 2vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .header__body {
+        height: 8vw;
+    }
+
+    .header__logo {
+        flex: 0 0 18vw;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .header__phone {
+        height: max-content;
+    }
+
+    .phone-image {
+        width: 2vw;
+    }
+
+    .header__body-phone {
+        font-size: 3vw;
+    }
+
+    .content__header {
+        top: 4vw;
+        right: 4vw;
+        line-height: 5vw;
+    }
+
+    .content__header h1 {
+        font-size: 4.5vw;
+    }
+
+    .content__header span {
+        font-size: 3.5vw;
+    }
+
+    .content__age {
+        width: 18vw;
+        bottom: 5vw;
+        right: 14vw;
+    }
+
+    .section-header h2 {
+        font-size: 3.5vw;
+    }
+
+    .products__item {
+        width: 70%;
+    }
+
+    .products__description {
+        font-size: 3vw;
+    }
+
+    .products__price {
+        text-transform: lowercase;
+        font-size: 2.7vw;
+    }
+
+    .products__price span {
+        font-size: 3vw;
+        margin: 0 5px;
+    }
+
+    .additional {
+        justify-content: center;
+        margin-top: 5vw;
+        /*margin-left: 80px;*/
+    }
+
+    .additional__item {
+        margin-bottom: 20px;
+        width: 50%;
+        justify-self: right;
+
+    }
+
+    .additional__img {
+        width: 140px;
+        height: 140px;
+        box-shadow: 0 0 6px 1px #3d3d3d;
+        margin-bottom: 15px;
+    }
+
+    .phones {
+        height: 11vw;
+        margin-top: 2vw;
+        border-radius: 6vw;
+        padding: 15px 25px;
+    }
+
+    .phones__description {
+        font-size: 2vw;
+    }
+
+    .phones__description a {
+        font-size: 3vw;
+    }
+
+    .phone__numbers {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    .chelny-phone:before {
+        content: 'Наб. Челны: ';
+    }
+
+    .window-structure__body-image img {
+        margin-left: -2.5vw;
+    }
+
+    .item_span {
+        left: 70%;
+        font-size: 3vw;
+    }
+
+    /*footer*/
+    .footer__body {
+        flex-direction: column;
+        margin-top: 8vw;
+        padding: 6vw;
+    }
+
+    .copy {
+        margin-top: 3vw;
+        line-height: 4vw;
+        align-items: center;
+    }
+
+    .copy img {
+        width: 1.5vw;
+        margin-right: 4px;
+    }
+
+    .copy span {
+        font-size: 3vw;
+    }
+
+    .copy p {
+        font-size: 1.6vw;
+    }
+
+    .contacts {
+        order: -1;
+    }
+
+    .contacts h4 {
+        margin-bottom: 10px;
+        font-size: 2vw;
+    }
+
+    .contacts p {
+        margin-top: 2vw;
+    }
+
+    .contacts a {
+        font-size: 3vw;
+    }
+
+    .contacts img {
+        width: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__body {
+        height: 8vw;
+    }
+
+    .header__logo {
+        flex: 0 0 18vw;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .header__phone {
+        height: max-content;
+    }
+
+    .phone-image {
+        width: 3vw;
+    }
+
+    .header__body-phone {
+        font-size: 4vw;
+    }
+
+    .content__header {
+        top: 4vw;
+        right: 4vw;
+        line-height: 5vw;
+    }
+
+    .content__header h1 {
+        font-size: 4.5vw;
+    }
+
+    .content__header span {
+        font-size: 3.5vw;
+    }
+
+    .content__age {
+        width: 18vw;
+        bottom: 5vw;
+        right: 14vw;
+    }
+
+    .section-header h2 {
+        font-size: 3.5vw;
+    }
+
+    .products__item {
+        width: 70%;
+    }
+
+    .products__description {
+        font-size: 4vw;
+    }
+
+    .products__price {
+        text-transform: lowercase;
+        font-size: 3.2vw;
+    }
+
+    .products__price span {
+        font-size: 4vw;
+        margin: 0 5px;
+    }
+
+    .additional {
+        justify-content: center;
+        margin-top: 5vw;
+        /*margin-left: 80px;*/
+    }
+
+    .additional__item {
+        margin-bottom: 20px;
+        width: 80%;
+        justify-self: right;
+
+    }
+
+    .additional__img {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 0 6px 1px #3d3d3d;
+        margin-bottom: 15px;
+    }
+
+    .additional span {
+        font-size: 4vw;
+    }
+
+    .phones {
+        flex-direction: column;
+        /*height: 11vw;*/
+        margin-top: 2vw;
+        border-radius: 15vw;
+        padding: 15px 10px;
+    }
+
+    .phones__description {
+        font-size: 3vw;
+    }
+
+    .phones__description a {
+        font-size: 4vw;
+    }
+
+    .phone__numbers {
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+
+    .chelny-phone:before {
+        /*content: 'Наб. Челны: ';*/
+    }
+
+    .window-structure__body-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
+    .item_span {
+        /*left: 67%;*/
+        font-size: 4vw;
+        font-weight: 500;
+        left: 35%;
+    }
+
+    /*footer*/
+    .footer__body {
+        flex-direction: column;
+        margin-top: 8vw;
+        padding: 6vw;
+    }
+
+    .copy {
+        margin-top: 3vw;
+        line-height: 4vw;
+        align-items: center;
+    }
+
+    .copy img {
+        width: 1.5vw;
+        margin-right: 4px;
+    }
+
+    .copy span {
+        font-size: 3.5vw;
+    }
+
+    .copy p {
+        font-size: 1.6vw;
+    }
+
+    .contacts {
+        order: -1;
+    }
+
+    .contacts h4 {
+        margin-bottom: 10px;
+        font-size: 3.5vw;
+    }
+
+    .contacts p {
+        margin-top: 2vw;
+        font-size: 3.5vw;
+    }
+
+    .contacts a {
+        font-size: 3.5vw;
+    }
+
+    .contacts img {
+        width: 2vw;
+    }
+}
