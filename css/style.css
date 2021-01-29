@@ -421,6 +421,10 @@ body {
     line-height: 30px;
 }
 
+.copy p{
+    font-size: 1vw;
+}
+
 .copy img {
     width: 12px;
     margin-right: 4px;
@@ -1106,7 +1110,7 @@ body {
     }
 
     .copy p {
-        font-size: 1.6vw;
+        font-size: 2vw;
     }
 
     .contacts {
